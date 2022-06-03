@@ -118,12 +118,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: auto;
+  font-size: 25px;
 }
 .restaurant__info--hearth-color {
   position: absolute;
-  width: 20px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
   z-index: 2;
   opacity: 0;
   transition: opacity 1s;
@@ -131,10 +131,9 @@ body {
 .restaurant__info--hearth-color:hover {
   opacity: 1;
   color: #9356DC;
-  z-index: 3;
 }
 .restaurant__info--hearth-white {
   position: absolute;
-  width: 20px;
+  font-size: 25px;
   z-index: 1;
 }/*# sourceMappingURL=style.css.map */

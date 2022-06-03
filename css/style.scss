@@ -156,26 +156,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: auto;
+    font-size: 25px;
 
     &-color {
         position: absolute;
-	width: 20px;
-	z-index: 2;
-	opacity: 0;
-	transition: opacity 1s;
+        font-size: 25px;
+        color: rgba(255, 255, 255);
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 1s;
 
         &:hover {
             opacity: 1;
-            color:#9356DC;
-            z-index: 3;
+            color: $primary-color;
         }
     }
 
     &-white {
         position: absolute;
-        width: 20px;
+        font-size: 25px;
         z-index: 1;
     }
 }
