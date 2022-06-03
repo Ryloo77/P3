@@ -158,23 +158,24 @@ body {
     justify-content: center;
     width: 20px;
     height: auto;
-}
 
-.restaurant__info--hearth-color {
-    position: absolute;
-    top: 5px;
-    color: #fff;
-    font-size: 10px;
-    transition: transform .5s;
-}
+    &-color {
+        position: absolute;
+	width: 20px;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 1s;
 
-.restaurant__info--hearth-white {
-    position: relative;
-    font-size: 20px;
-}
+        &:hover {
+            opacity: 1;
+            color:#9356DC;
+            z-index: 3;
+        }
+    }
 
-
-.restaurant__info--hearth-color:hover {
-    color: $primary-color;
-    transform: scale(2.1);
+    &-white {
+        position: absolute;
+        width: 20px;
+        z-index: 1;
+    }
 }
