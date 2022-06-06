@@ -1,0 +1,46 @@
+@mixin bouton-fonction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    width: 95%;
+    border: 0px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgb(219, 217, 217);
+    background-color: rgb(245, 241, 241);
+    color: #000;
+    min-width: 300px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 20%;
+    padding-left: 10%;
+    position: relative;
+}
+
+@mixin number-fonction {
+    border: 0px solid;
+    border-radius: 10px;
+    color: white;
+    background-color: $primary-color;
+    position: absolute;
+    left: - 10px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    text-align: center;
+    padding: 3px;
+}
+
+.fonction__btn i{
+    color:gray;
+}
+
+.fonction__btn:hover {
+    background-color: rgba($primary-color, 0.2);
+}
+
+.fonction__btn i:hover{
+    color: $primary-color;
+}
