@@ -15,8 +15,7 @@ body {
 .fonction__btn:hover {
   background-color: rgba(147, 86, 220, 0.2);
 }
-
-.fonction__btn i:hover {
+.fonction__btn:hover i {
   color: #9356DC;
 }
 
@@ -25,9 +24,8 @@ body {
   background-color: white;
 }
 .header__logo--image {
-  width: 40%;
-  padding-top: 5%;
-  padding-bottom: 1%;
+  width: 250px;
+  padding-top: 10px;
 }
 
 .header__localisation {
@@ -48,6 +46,7 @@ body {
 .header__presentation {
   padding: 5% 10%;
   display: flex;
+  padding-bottom: 40px;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -57,7 +56,7 @@ body {
 /*bases*/
 .header {
   text-align: center;
-  height: 450px;
+  height: auto;
   background-color: rgb(245, 241, 241);
 }
 .header__presentation--btn {
@@ -177,14 +176,16 @@ body {
 .restaurant__info--hearth-color {
   position: absolute;
   font-size: 25px;
-  color: rgb(255, 255, 255);
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   z-index: 2;
   opacity: 0;
   transition: opacity 1s;
 }
 .restaurant__info--hearth-color:hover {
   opacity: 1;
-  color: #9356DC;
 }
 .restaurant__info--hearth-white {
   position: absolute;

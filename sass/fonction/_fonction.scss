@@ -39,8 +39,7 @@
 
 .fonction__btn:hover {
     background-color: rgba($primary-color, 0.2);
-}
-
-.fonction__btn i:hover{
-    color: $primary-color;
+    i{
+        color: $primary-color;
+    }
 }
