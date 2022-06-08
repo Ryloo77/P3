@@ -1,0 +1,20 @@
+.fonction{
+    padding: 15px;
+}
+.fonction__btn {
+    @include bouton-fonction;
+
+    &--number {
+        @include number-fonction;
+    }
+}
+.fonction__btn i{
+    color:gray;
+}
+
+.fonction__btn:hover {
+    background-color: rgba($primary-color, 0.2);
+    i{
+        color: $primary-color;
+    }
+}

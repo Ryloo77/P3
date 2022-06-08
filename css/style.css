@@ -8,18 +8,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.fonction__btn i {
-  color: gray;
-}
-
-.fonction__btn:hover {
-  background-color: rgba(147, 86, 220, 0.2);
-}
-.fonction__btn:hover i {
-  color: #9356DC;
-}
-
-/*mixin header*/
 .header__logo {
   background-color: white;
 }
@@ -51,9 +39,6 @@ body {
   justify-content: space-evenly;
 }
 
-/*mixin fonction */
-/*mixin restaurants*/
-/*bases*/
 .header {
   text-align: center;
   height: auto;
@@ -75,9 +60,8 @@ body {
   margin-top: 25px;
 }
 
-/* function */
 .fonction {
-  padding: 4%;
+  padding: 15px;
 }
 
 .fonction__btn {
@@ -114,7 +98,17 @@ body {
   padding: 3px;
 }
 
-/*restaurants*/
+.fonction__btn i {
+  color: gray;
+}
+
+.fonction__btn:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.fonction__btn:hover i {
+  color: #9356DC;
+}
+
 .restaurant {
   background-color: rgb(245, 241, 241);
 }

@@ -1,0 +1,40 @@
+.header__logo {
+    background-color: white;
+
+    &--image {
+       width: 250px;
+       padding-top: 10px;
+    }
+}
+
+.header__localisation {
+    background-color: rgb(226, 224, 224);
+    box-shadow: inset 0px 2px 4px rgb(183, 181, 181);
+     & p {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0;
+         height: 40px;
+         & i {
+        padding-right: 5%;
+         }
+     }
+}
+
+.header__presentation {
+    padding: 5% 10%;
+    display: flex;
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.header {
+    @include heading;
+
+    &__presentation--btn {
+        @include bouton-header;
+    }
+}

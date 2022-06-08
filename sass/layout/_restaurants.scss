@@ -1,0 +1,59 @@
+.restaurant {
+    background-color: rgb(245, 241, 241);
+}
+
+.restaurant__card {
+    @include cards-style;
+}
+
+.restaurant__card--image-new {
+    @include new-on-image;
+}
+
+.restaurant__card--image-photo {
+
+    @include image-cards;
+}
+
+.restaurant__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+
+    &--text {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+
+.restaurant__info--hearth {
+    position: relative;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+
+    &-color {
+        position: absolute;
+        font-size: 25px;
+        background: linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 1s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &-white {
+        position: absolute;
+        font-size: 25px;
+        z-index: 1;
+    }
+}
