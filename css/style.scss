@@ -1,9 +1,12 @@
-/*bases*/
-
-
+/*index.html*/
 @import "../sass/utils/mixins.scss";
 @import "../sass/utils/variables.scss";
 @import "../sass/base/form.scss";
 @import "../sass/layout/header.scss";
 @import "../sass/layout/fonction.scss";
 @import "../sass/layout/restaurants.scss";
+@import "../sass/layout/footer.scss";
+
+/*menu.html*/
+
+@import "../sass/page/menu.scss";

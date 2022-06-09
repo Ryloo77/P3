@@ -1,0 +1,23 @@
+.footer {
+    background-color: rgb(61, 59, 59);
+    color: white;
+    padding: 20px;
+
+    &__title{
+        font-family: $font-titlelogo;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__liste{
+        list-style-type: none;
+        line-height: 18px;
+        font-size: 12px;
+        padding: 0;
+
+        &--link{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

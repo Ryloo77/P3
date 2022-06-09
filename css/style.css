@@ -1,4 +1,6 @@
-/*bases*/
+/*index.html*/
+/*mixins index.html*/
+/*mixin menu.html*/
 * {
   box-sizing: border-box;
 }
@@ -109,6 +111,11 @@ body {
   color: #9356DC;
 }
 
+.link__card {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurant {
   background-color: rgb(245, 241, 241);
 }
@@ -185,4 +192,119 @@ body {
   position: absolute;
   font-size: 25px;
   z-index: 1;
+}
+
+.footer {
+  background-color: rgb(61, 59, 59);
+  color: white;
+  padding: 20px;
+}
+.footer__title {
+  font-family: "shrikhand";
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer__liste {
+  list-style-type: none;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 0;
+}
+.footer__liste--link {
+  text-decoration: none;
+  color: white;
+}
+
+/*menu.html*/
+main {
+  border-radius: 20px 20px 0px 0px;
+  background-color: rgb(241, 238, 238);
+  margin-top: -20px;
+  margin-bottom: 0;
+  position: relative;
+  height: auto;
+}
+
+.titre__restaurant {
+  display: flex;
+  justify-content: space-between;
+  font-family: "shrikhand";
+}
+.titre__restaurant--name {
+  margin-left: 10px;
+}
+
+.plats {
+  height: 350px;
+}
+
+.plats__order {
+  margin: 0px;
+  padding: 10px;
+}
+
+.plats__order--name {
+  width: 95%;
+  border: 0px solid;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(219, 217, 217);
+  min-width: 300px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  margin: 0px 0px 15px 0px;
+  line-height: 10px;
+  -webkit-animation: cardup 1.5s;
+          animation: cardup 1.5s;
+}
+.plats__order--name-price {
+  display: flex;
+  align-items: end;
+  padding-bottom: 15px;
+  font-weight: 800;
+}
+.plats__order--name-validation {
+  display: none;
+}
+
+@keyframes cardup {
+  0% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cardup {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 8px;
+    opacity: 0.2;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+.order2 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.order3 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }/*# sourceMappingURL=style.css.map */

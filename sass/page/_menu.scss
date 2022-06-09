@@ -1,0 +1,79 @@
+main{
+    @include main-menu;
+}
+.titre__restaurant {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-titlelogo;
+
+    &--name{
+        margin-left: 10px;
+    }
+}
+
+.plats 
+{
+    height: 350px;
+}
+.plats__order{
+    margin: 0px;
+    padding : 10px;
+}
+
+.plats__order--name
+{   @include cards-style;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    margin: 0px 0px 15px 0px;
+    line-height: 10px;
+    animation: cardup 1.5s;
+
+    &-price {
+         display: flex;
+         align-items: end;
+         padding-bottom: 15px;
+         font-weight: 800;
+     }
+     &-validation {
+         display: none;
+     }
+}
+    @keyframes cardup {
+        0% {
+            margin-top: 20px;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes cardup {
+        0% {
+            margin-top: 10px;
+            opacity: 0;
+        }
+        50% {
+            margin-top: 8px;
+            opacity: 0.2;
+        }
+        100% {
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+    
+
+    .order2
+    {
+        animation-fill-mode:backwards;
+        animation-delay: 0.3s;
+    }
+    .order3
+    {
+        animation-fill-mode:backwards;
+        animation-delay: 0.6s;
+    }
