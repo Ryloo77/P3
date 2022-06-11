@@ -18,6 +18,11 @@
         &--link{
             text-decoration: none;
             color: white;
+            line-height: 20px;
+
+            & i{
+                margin-right: 5px;
+            }
         }
     }
 }

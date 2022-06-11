@@ -2,7 +2,7 @@
     background-color: white;
 
     &--image {
-       width: 250px;
+       width: 150px;
        padding-top: 10px;
     }
 }
@@ -38,3 +38,4 @@
         @include bouton-header;
     }
 }
+

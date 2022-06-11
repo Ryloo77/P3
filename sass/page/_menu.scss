@@ -7,14 +7,26 @@ main{
     font-family: $font-titlelogo;
 
     &--name{
-        margin-left: 10px;
+        margin-left: 15px;
     }
+
+}
+
+
+.restaurant__card--image-photoMenu
+{
+    @include image-cardMenu
 }
 
 .plats 
 {
     height: 350px;
+
+    &__2{
+        height: 420px;
+    }
 }
+
 .plats__order{
     margin: 0px;
     padding : 10px;
@@ -25,7 +37,7 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 0px 15px;
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 10px 10px;
     line-height: 10px;
     animation: cardup 1.5s;
 
@@ -77,3 +89,15 @@ main{
         animation-fill-mode:backwards;
         animation-delay: 0.6s;
     }
+    .order4
+    {
+        animation-fill-mode:backwards;
+        animation-delay: 0.9s;
+    }
+
+
+    
+    .commande--btn
+{
+    @include bouton-commander;
+}
