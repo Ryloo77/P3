@@ -2,8 +2,9 @@
     background-color: white;
 
     &--image {
-       width: 150px;
-       padding-top: 10px;
+       width: 180px;
+       margin: 10px;
+       margin-top: 15px;
     }
 }
 
@@ -39,3 +40,20 @@
     }
 }
 
+/*pages Menu*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+}
+
+.restaurant__card--image-photoMenu {
+    @include image-cardMenu
+}

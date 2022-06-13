@@ -14,8 +14,9 @@ body {
   background-color: white;
 }
 .header__logo--image {
-  width: 150px;
-  padding-top: 10px;
+  width: 180px;
+  margin: 10px;
+  margin-top: 15px;
 }
 
 .header__localisation {
@@ -60,6 +61,29 @@ body {
   justify-content: center;
   height: 45px;
   margin-top: 25px;
+}
+
+/*pages Menu*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+}
+
+.restaurant__card--image-photoMenu {
+  position: relative;
+  border: 0px solid;
+  border-radius: 0px 0px 0px 0px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fonction {
@@ -124,7 +148,8 @@ body {
   width: 95%;
   border: 0px solid;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgb(219, 217, 217);
+  box-shadow: 3px 3px 10px rgb(219, 216, 216);
+  background-color: white;
   min-width: 300px;
   height: auto;
   margin: auto;
@@ -222,11 +247,18 @@ body {
 /*menu.html*/
 main {
   border-radius: 20px 20px 0px 0px;
-  background-color: rgb(241, 238, 238);
+  background-color: rgb(244, 242, 242);
   margin-top: -20px;
   padding-bottom: 40px;
   position: relative;
   height: auto;
+}
+
+.plat__order--underlign {
+  width: 60px;
+  height: 2px;
+  border: 2px solid #99E2D0;
+  margin: 0px 0px 15px 10px;
 }
 
 .titre__restaurant {
@@ -238,14 +270,12 @@ main {
   margin-left: 15px;
 }
 
-.restaurant__card--image-photoMenu {
-  position: relative;
-  border: 0px solid;
-  border-radius: 0px 0px 0px 0px;
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.plats__order {
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin: 0px 0px 2px 0px;
+  padding-left: 10px;
+  font-weight: 400;
 }
 
 .plats {
@@ -255,23 +285,17 @@ main {
   height: 420px;
 }
 
-.plats__order {
-  margin: 0px;
-  padding: 10px;
-}
-
 .plats__order--name {
   width: 95%;
   border: 0px solid;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgb(219, 217, 217);
-  min-width: 300px;
+  box-shadow: 3px 3px 10px rgb(219, 216, 216);
+  background-color: white;
   height: auto;
-  margin: auto;
-  margin-bottom: 20px;
-  position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: hidden;
   padding: 0px 15px;
   margin: 0px 0px 10px 10px;
   line-height: 10px;
@@ -280,12 +304,34 @@ main {
 }
 .plats__order--name-price {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 30px;
   padding-bottom: 15px;
   font-weight: 800;
 }
 .plats__order--name-validation {
-  display: none;
+  width: 140px;
+  height: auto;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-right: -110px;
+  transition: margin-right 1s;
+}
+.plats__order--name-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 90px;
+  font-size: 25px;
+  background-color: #99E2D0;
+  height: 100%;
+}
+
+.plats__order--name:hover .plats__order--name-validation {
+  margin-right: -15px;
 }
 
 @keyframes cardup {
