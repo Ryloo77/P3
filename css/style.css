@@ -1,4 +1,39 @@
 /*index.html*/
+.loader {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  border-top: 5px solid #9356DC;
+  border-right: 5px solid rgba(125, 125, 125, 0.2);
+  border-left: 5px solid rgba(125, 125, 125, 0.2);
+  border-bottom: 5px solid #99E2D0;
+  border-radius: 50%;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 /*mixins index.html*/
 /*mixin menu.html*/
 * {
@@ -13,7 +48,7 @@ body {
 .header__logo {
   background-color: white;
 }
-.header__logo--image {
+.header__logo--image-index {
   width: 180px;
   margin: 10px;
   margin-top: 15px;
@@ -70,9 +105,17 @@ nav {
   justify-content: center;
 }
 
-.arrow {
+.header__logo--image {
   display: flex;
   justify-content: start;
+  width: 180px;
+}
+
+.arrow {
+  display: flex;
+  width: 30px;
+  justify-content: end;
+  padding-left: 30px;
   font-size: 20px;
   text-decoration: none;
   color: black;
@@ -331,6 +374,13 @@ main {
   height: 100%;
 }
 
+.fa-circle-check {
+  transition: all 1s;
+}
+
+.plats__order--name:hover .fa-circle-check {
+  transform: rotate(360deg);
+}
 .plats__order--name:hover .plats__order--name-validation {
   margin-right: -15px;
 }

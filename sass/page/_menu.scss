@@ -1,6 +1,7 @@
 main {
     @include main-menu;
 }
+
 .plat__order--underlign {
     @include titleUnder;
 }
@@ -34,9 +35,6 @@ main {
 .plats__order--name {
     @include cardPlats;
 
-    &description {
-
-    }
 
     &-price {
         display: flex;
@@ -45,10 +43,9 @@ main {
         margin-right: 30px;
         padding-bottom: 15px;
         font-weight: 800;
-
     }
 
-    &-validation{
+    &-validation {
         @include priceCheck;
     }
 
@@ -56,20 +53,28 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        color : white;
+        color: white;
         width: 90px;
         font-size: 25px;
         background-color: $tertiary-color;
         height: 100%;
-
     }
 }
 
+.fa-circle-check {
+    transition: all 1s;
+}
+
 .plats__order--name:hover {
+    .fa-circle-check {
+        transform: rotate(360deg);
+    }
+
     .plats__order--name-validation {
         margin-right: -15px;
     }
 }
+
 
 @keyframes cardup {
     0% {

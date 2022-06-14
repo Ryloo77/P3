@@ -1,12 +1,13 @@
 .header__logo {
     background-color: white;
 
-    &--image {
+    &--image-index {
        width: 180px;
        margin: 10px;
        margin-top: 15px;
     }
 }
+
 
 .header__localisation {
     background-color: rgb(226, 224, 224);
@@ -48,9 +49,18 @@ nav {
     justify-content: center;
 }
 
-.arrow {
+.header__logo--image{
     display: flex;
     justify-content: start;
+    width: 180px;
+    margin
+
+}
+
+.arrow {
+    display: flex;
+    width: 30px;
+    padding-left: 30px;
     font-size: 20px;
     text-decoration: none;
     color: black;
