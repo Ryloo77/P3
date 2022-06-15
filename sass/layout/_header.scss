@@ -43,7 +43,7 @@
 
 /*pages Menu*/
 
-nav {
+.header__logo--menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,13 +53,10 @@ nav {
     display: flex;
     justify-content: start;
     width: 180px;
-    margin-left: 30px;
+    margin: 10px;
 }
-
 .arrow {
-    display: flex;
     width: 30px;
-    padding-left: 30px;
     font-size: 20px;
     text-decoration: none;
     color: black;

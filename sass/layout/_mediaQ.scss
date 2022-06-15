@@ -1,0 +1,19 @@
+ @media all and(min-width : 768px)
+ {
+
+    .restaurant {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+    .link__card{
+            min-width: 40%;
+        }
+    
+
+    .restaurant h2{
+        width: 100%;
+        margin-left: 20px;
+    }
+ }

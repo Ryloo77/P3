@@ -6,7 +6,7 @@
     z-index: 10;
     left: 0;
     top: 0;
-    animation: time 9s forwards;
+    animation: time 5s forwards;
 }
 
 .loader {
@@ -21,7 +21,7 @@
     border-left-style: dotted;
     border-bottom: 10px solid #99E2D0;
     border-radius: 50%;
-    animation: spin 3s ease-in-out 3;
+    animation: spin 3s ease-in-out 2;
     right: 0;
     bottom: 0;
     top: 0;
