@@ -162,6 +162,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .header__logo--image {
@@ -245,6 +246,8 @@ body {
 
 .restaurant {
   background-color: rgb(245, 241, 241);
+  margin-top: 20px;
+  padding-top: 10px;
 }
 .restaurant h2 {
   padding-left: 15px;
@@ -349,12 +352,25 @@ body {
   margin-right: 10px;
 }
 
+@media all and (min-width: 1024px) {
+  .titre__restaurant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .media__queries {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 @media all and (min-width: 768px) {
   .restaurant {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .link__card {
@@ -364,6 +380,28 @@ body {
   .restaurant h2 {
     width: 100%;
     margin-left: 20px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .mediaquery__header--index {
+    display: flex;
+  }
+  .mediaquery__header--index h1, .mediaquery__header--index h2 {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .header__presentation {
+    width: 50%;
+    background-color: white;
+    padding-top: 10px;
+  }
+
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
   }
 }
 /*menu.html*/
@@ -395,6 +433,7 @@ main {
 .plats__order {
   text-transform: uppercase;
   padding-bottom: 0px;
+  font-size: 20px;
   margin: 0px 0px 2px 0px;
   padding-left: 10px;
   font-weight: 400;
@@ -417,6 +456,7 @@ main {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  font-size: 14px;
   padding: 0px 15px;
   margin: 0px 0px 10px 10px;
   line-height: 10px;
@@ -427,9 +467,9 @@ main {
   padding: 10px;
   line-height: 30px;
 }
-.plats__order--name-description h3, .plats__order--name p {
+.plats__order--name-description h3, .plats__order--name .description-p {
   margin: 0;
-  width: 330px;
+  width: 265px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -464,14 +504,16 @@ main {
 }
 
 .fa-circle-check {
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .plats__order--name:hover .fa-circle-check {
   transform: rotate(360deg);
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
-.plats__order--name:hover .plats__order--name-description h3, .plats__order--name:hover p {
-  width: 200px;
+.plats__order--name:hover .plats__order--name-description h3, .plats__order--name:hover .description-p {
+  width: 150px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -482,7 +524,7 @@ main {
 
 @-webkit-keyframes cardup {
   0% {
-    margin-top: 20px;
+    margin-top: 30px;
     opacity: 0;
   }
   100% {
@@ -493,7 +535,7 @@ main {
 
 @keyframes cardup {
   0% {
-    margin-top: 20px;
+    margin-top: 30px;
     opacity: 0;
   }
   100% {

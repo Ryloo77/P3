@@ -47,6 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .header__logo--image{
@@ -61,6 +62,7 @@
     text-decoration: none;
     color: black;
 }
+
 
 .restaurant__card--image-photoMenu {
     @include image-cardMenu

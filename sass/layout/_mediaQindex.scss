@@ -1,0 +1,42 @@
+@media all and(min-width : 768px) {
+
+    .restaurant {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .link__card {
+        min-width: 40%;
+    }
+
+
+    .restaurant h2 {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+@media all and(min-width : 1024px) {
+    .mediaquery__header--index {
+        display: flex;
+         h1,h2 {
+           margin-top: 5px;
+           text-align: center;
+         }
+    }
+    .header__presentation {
+       width: 50%;
+       background-color: white;
+       padding-top: 10px;
+    }
+
+.fonction{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 50%;
+
+}
+}
