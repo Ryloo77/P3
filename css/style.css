@@ -410,6 +410,12 @@ body {
     width: 50%;
   }
 }
+@media all and (min-width: 1220px) {
+  body {
+    width: 1220px;
+    background-color: #342744;
+  }
+}
 /*menu.html*/
 main {
   border-radius: 20px 20px 0px 0px;
