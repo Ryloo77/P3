@@ -77,13 +77,12 @@ main {
 }
 
 .fa-circle-check {
-    transition: all 1s;
+    transition: all .5s ease-in .1s;
 }
 
 .plats__order--name:hover {
     .fa-circle-check {
         transform: rotate(360deg);
-        animation-delay: 2s;
     }
     .plats__order--name-description h3, .description-p{
         width: 150px;

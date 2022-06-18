@@ -161,19 +161,25 @@ body {
 .header__logo--menu {
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: white;
 }
 
-.header__logo--image {
+.header__logo--image-conteneur {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  padding-right: 60px;
+  width: 100%;
+}
+
+.header__logo--image {
   width: 180px;
   margin: 10px;
 }
 
 .arrow {
-  width: 30px;
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
   font-size: 20px;
   text-decoration: none;
   color: black;
@@ -504,13 +510,11 @@ main {
 }
 
 .fa-circle-check {
-  transition: all 1s;
+  transition: all 0.5s ease-in 0.1s;
 }
 
 .plats__order--name:hover .fa-circle-check {
   transform: rotate(360deg);
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
 }
 .plats__order--name:hover .plats__order--name-description h3, .plats__order--name:hover .description-p {
   width: 150px;
