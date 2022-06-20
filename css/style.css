@@ -7,8 +7,8 @@
   z-index: 10;
   left: 0;
   top: 0;
-  -webkit-animation: time 5s forwards;
-          animation: time 5s forwards;
+  -webkit-animation: time 3s forwards;
+          animation: time 3s forwards;
 }
 
 .loader {
@@ -23,8 +23,8 @@
   border-left-style: dotted;
   border-bottom: 10px solid #99E2D0;
   border-radius: 50%;
-  -webkit-animation: spin 3s ease-in-out 2;
-          animation: spin 3s ease-in-out 2;
+  -webkit-animation: spin 1.5s ease-in-out 2;
+          animation: spin 1.5s ease-in-out 2;
   right: 0;
   bottom: 0;
   top: 0;
@@ -156,6 +156,10 @@ body {
   height: 45px;
   margin-top: 25px;
 }
+.header__presentation--btn:hover {
+  box-shadow: 0px 2px 10px rgb(50, 50, 50);
+  opacity: 0.9;
+}
 
 /*pages Menu*/
 .header__logo--menu {
@@ -240,6 +244,7 @@ body {
 
 .fonction__btn:hover {
   background-color: rgba(147, 86, 220, 0.2);
+  box-shadow: 0px 2px 10px rgb(135, 133, 133);
 }
 .fonction__btn:hover i {
   color: #9356DC;
@@ -291,6 +296,10 @@ body {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.restaurant__card:hover {
+  box-shadow: 3px 3px 10px rgb(159, 157, 157);
 }
 
 .restaurant__info {
@@ -392,7 +401,8 @@ body {
   .mediaquery__header--index {
     display: flex;
   }
-  .mediaquery__header--index h1, .mediaquery__header--index h2 {
+  .mediaquery__header--index h1,
+.mediaquery__header--index h2 {
     margin-top: 5px;
     text-align: center;
   }
@@ -408,12 +418,6 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-  }
-}
-@media all and (min-width: 1220px) {
-  body {
-    width: 1220px;
-    background-color: #342744;
   }
 }
 /*menu.html*/
@@ -485,7 +489,7 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  transition: all 1s;
+  transition: width 1s;
 }
 .plats__order--name-price {
   display: flex;
@@ -519,11 +523,14 @@ main {
   transition: all 0.5s ease-in 0.1s;
 }
 
+.plats__order--name:hover {
+  box-shadow: 3px 3px 10px rgb(139, 137, 137);
+}
 .plats__order--name:hover .fa-circle-check {
   transform: rotate(360deg);
 }
 .plats__order--name:hover .plats__order--name-description h3, .plats__order--name:hover .description-p {
-  width: 150px;
+  width: 170px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -594,4 +601,9 @@ main {
   justify-content: center;
   height: 45px;
   margin: auto;
+}
+
+.commande--btn:hover {
+  box-shadow: 0px 2px 10px rgb(50, 50, 50);
+  opacity: 0.9;
 }/*# sourceMappingURL=style.css.map */

@@ -1,23 +1,17 @@
- @media all and(min-width:480px) {}
+@media all and(min-width : 768px) {}
 
+@media all and(min-width : 1024px) {
 
- @media all and(min-width : 768px) {
+    .titre__restaurant {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
- }
+    .media__queries {
+        display: flex;
+        justify-content: space-around;
+    }
 
- @media all and(min-width : 1024px) {
- 
-     .titre__restaurant {
-         width: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-
-     .media__queries {
-         display: flex;
-         justify-content: space-around;
-
-     }
-    
- }
+}

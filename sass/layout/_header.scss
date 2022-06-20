@@ -39,7 +39,12 @@
     &__presentation--btn {
         @include bouton-header;
     }
+    &__presentation--btn:hover {
+        box-shadow: 0px 2px 10px rgb(50, 50, 50);
+        opacity: .9;
 }
+}
+
 
 /*pages Menu*/
 

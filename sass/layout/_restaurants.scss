@@ -24,6 +24,10 @@
 }
 }
 
+.restaurant__card:hover{
+    box-shadow: 3px 3px 10px rgb(159, 157, 157);
+}
+
 .restaurant__info {
     display: flex;
     justify-content: space-between;
