@@ -367,7 +367,24 @@ body {
   margin-right: 10px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (max-width: 500px) {
+  .plats__order--name:hover .plats__order--name-description h3,
+.plats__order--name:hover .description-p {
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media all and (min-width: 1080px) {
+  .plats__order--name:hover .plats__order--name-description h3,
+.plats__order--name:hover .description-p {
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   .titre__restaurant {
     width: 100%;
     display: flex;
@@ -528,12 +545,6 @@ main {
 }
 .plats__order--name:hover .fa-circle-check {
   transform: rotate(360deg);
-}
-.plats__order--name:hover .plats__order--name-description h3, .plats__order--name:hover .description-p {
-  width: 170px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .plats__order--name:hover .plats__order--name-validation {
   margin-right: -15px;
