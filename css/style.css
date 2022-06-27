@@ -438,6 +438,16 @@ body {
   }
 }
 /*menu.html*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
 main {
   border-radius: 20px 20px 0px 0px;
   background-color: rgb(244, 242, 242);
